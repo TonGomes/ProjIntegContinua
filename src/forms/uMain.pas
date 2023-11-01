@@ -32,6 +32,7 @@ procedure TForm1.btnAddClick(Sender: TObject);
 var
   c :TCalcular;
 begin
+
   c := TCalcular.Create;
   try
     edtResult.Text := IntToStr(c.Somar(StrToInt(edtA.text), StrToInt(edtB.Text)));
